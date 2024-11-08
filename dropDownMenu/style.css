@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 500vh;
+}
+.menu{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #171717;
+    display: flex;
+    font: 700 16px sans-serif;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu .logo{
+    font: 700 32px sans-serif;
+    text-decoration: none;
+    color: #faf5fa;
+    margin-left: 30px;
+}
+.logo span{
+    color: burlywood;
+}
+.menu > ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 70px;
+    column-gap: 30px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #faf5fa;
+    display: block;
+    padding: 20px;
+
+    &:hover{
+        color: burlywood;
+    }
+}
+
+.blog{
+    align-items: center;
+    position: relative;
+}
+.blog-li{
+    width: max-content;
+}
+.blog-li{
+    display: flex;
+    cursor: pointer;
+}
+.blog-li img{
+    position: relative;
+    top: 0;
+    width: 20px;
+}
+.article{
+    display: none;
+    top: 60px;
+    left: 0;
+    position: absolute;
+    list-style: none;
+    background-color: #171717;
+}
+.article li a:hover{
+    color: #171717;
+    background-color: #ddd;
+}
+.blog:hover .article{
+    display: block;
+}
+
+.text{
+    margin-top: 70px;
+    height: 500px;
+    text-align: center;
+}
+.text:nth-child(odd){
+    color: darkblue;
+}
+.text:nth-child(odd) p{
+    color: teal;
+}
+.text:nth-child(even){
+    color: darkorange;
+}
+.text:nth-child(even) p{
+    color: crimson;
+}
